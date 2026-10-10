@@ -80,7 +80,9 @@ A configurable clock frequency divider using a counter and combinational selecti
 
 The design uses a 100 MHz input clock. Each successive counter bit operates at half the frequency of the preceding bit.
 
-### 05 — Traffic Light FSM
+### 05 — stepper-motor-controller
+
+### 06 — Traffic Light FSM
 
 A Moore finite state machine (FSM) for controlling a two-road traffic light system.
 
