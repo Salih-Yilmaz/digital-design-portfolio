@@ -80,7 +80,21 @@ A configurable clock frequency divider using a counter and combinational selecti
 
 The design uses a 100 MHz input clock. Each successive counter bit operates at half the frequency of the preceding bit.
 
-### 05 — stepper-motor-controller
+### 05 — Stepper Motor Controller
+
+A four-state Moore finite state machine (FSM) for controlling a stepper motor in clockwise and counterclockwise directions.
+
+- Four-state FSM design
+- Binary state encoding
+- Current-state and next-state logic
+- Asynchronous active-low reset
+- Enable-controlled stepping and position holding
+- Direction-controlled clockwise and counterclockwise transitions
+- Moore output logic for coil control
+- Behavioral simulation with a dedicated testbench
+- Verification of stepping sequences and hold behavior
+
+The controller cycles through four states to generate the corresponding four-bit coil activation pattern. The `en` input controls whether the motor advances, while `dir` selects the rotation direction.
 
 ### 06 — Traffic Light FSM
 
@@ -132,7 +146,8 @@ digital-design-portfolio/
 ├── 02-arithmetic-unit/
 ├── 03-7segment-decoder/
 ├── 04-clock-scaler/
-├── 05-traffic-light-fsm/
+├── 05-stepper-motor-controller/
+├── 06-traffic-light-fsm/
 └── README.md
 ```
 
